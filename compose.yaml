@@ -1,0 +1,7 @@
+﻿services:
+  managementservice:
+    image: managementservice
+    build:
+      context: .
+      dockerfile: ManagementService/Dockerfile
+
