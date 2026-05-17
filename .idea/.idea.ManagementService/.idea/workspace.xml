@@ -15,16 +15,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56b6c3cc-e292-4d16-a821-4910ba70c65a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/ManagementService.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/ManagementService.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Business/IUserBl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Business/UserBl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/DatabaseContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/IDatabaseContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/UserContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Model/MongoDBSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Model/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ManagementService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManagementService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManagementService/ManagementService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/ManagementService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManagementService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManagementService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +38,35 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ManagementService/Business/IUserBL.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Business/UserBl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/IDatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/UserContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/Repository/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Model/MongoDBSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Model/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b757e154dd7f8c23e0e785431c97a76e4b9c6bdae38b978238421dbab55d/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f28379ed55a3d92d3c4b39277f20d45ddfd3481dfddd5f81ac249a94461823b/OpenApiEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3DqXmFYCEFaVcx71R80h5ksIApv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,9 +74,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.ManagementService: http.executor": "Run",
+    ".NET Launch Settings Profile.ManagementService: http.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -59,15 +86,21 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/APIIntegration",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ManagementService: http">
@@ -125,11 +158,17 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -149,7 +188,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1779010731102</updated>
-      <workItem from="1779010733444" duration="1073000" />
+      <workItem from="1779010733444" duration="2577000" />
+      <workItem from="1779041806241" duration="4761000" />
+      <workItem from="1779046590814" duration="1820000" />
     </task>
     <servers />
   </component>
@@ -187,6 +228,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" containingFunctionPresentation="Method 'GetUsers'">
+            <startOffsets>
+              <option value="392" />
+            </startOffsets>
+            <endOffsets>
+              <option value="393" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

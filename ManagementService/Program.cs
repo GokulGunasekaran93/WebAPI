@@ -1,8 +1,33 @@
+using ManagementService.Business;
+using ManagementService.DataAccess.DatabaseContext;
+using ManagementService.DataAccess.Repository;
+using ManagementService.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+//db config
+
+builder.Services.Configure<MongoDBSettings>(
+    options =>  
+    {
+        //options.ConnectionString = "mongodb://localhost:27017";
+        //options.Database = "homeDB";
+        options.ConnectionString = builder.Configuration["MongoDB:ConnectionString"].ToString();
+        options.Database = builder.Configuration["MongoDB:Database"].ToString();
+
+    });
+
+builder.Services.AddControllers();
+
+builder.Services.AddTransient<IDatabaseContext, DatabaseContext>();
+
+builder.Services.AddTransient<IUserBl, UserBl>();
+
+builder.Services.AddTransient<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
@@ -32,6 +57,8 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
+
+app.MapControllers();
 
 app.Run();
 
