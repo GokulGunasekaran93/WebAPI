@@ -21,6 +21,12 @@ builder.Services.Configure<MongoDBSettings>(
 
     });
 
+// add cors 
+
+builder.Services.AddCors(options =>
+    options.AddPolicy("CorsPolicy",policy=>policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+    ));
+
 builder.Services.AddControllers();
 
 builder.Services.AddTransient<IDatabaseContext, DatabaseContext>();
@@ -38,6 +44,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 var summaries = new[]
 {
