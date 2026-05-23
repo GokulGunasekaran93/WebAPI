@@ -1,6 +1,7 @@
 using ManagementService.Business;
 using ManagementService.DataAccess.Repository;
 using ManagementService.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +18,7 @@ namespace ManagementService.Controller
             _userBl = userBl;
         }
         
+        [AllowAnonymous]
         // GET: api/<Users>
         [HttpGet]
         public IEnumerable<User> Get()

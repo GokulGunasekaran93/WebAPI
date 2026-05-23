@@ -15,19 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56b6c3cc-e292-4d16-a821-4910ba70c65a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ManagementService/Business/IUserBl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Business/UserBl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/DatabaseContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/IDatabaseContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/UserContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Model/MongoDBSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagementService/Model/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Controller/v1/HelloController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Controller/v2/HelloController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementService/Options/ConfigureSwaggerOptions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ManagementService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ManagementService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManagementService/Controller/Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/Controller/Users.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManagementService/ManagementService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/ManagementService.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManagementService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManagementService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ManagementService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +39,23 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GokulGunasekaran93"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/GokulGunasekaran93/WebAPI.git",
+    "accountId": "cfba067d-e4d8-4e22-b049-c5629e82e2ab"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ManagementService/Business/IUserBL.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/Business/UserBl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Controller/v1/HelloController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Controller/v2/HelloController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/DatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/IDatabaseContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/DatabaseContext/UserContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/Model/MongoDBSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ManagementService/Model/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ManagementService/Options/ConfigureSwaggerOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b757e154dd7f8c23e0e785431c97a76e4b9c6bdae38b978238421dbab55d/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f28379ed55a3d92d3c4b39277f20d45ddfd3481dfddd5f81ac249a94461823b/OpenApiEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -74,7 +83,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.ManagementService: http.executor": "Debug",
+    ".NET Launch Settings Profile.ManagementService: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -190,8 +199,33 @@
       <updated>1779010731102</updated>
       <workItem from="1779010733444" duration="2577000" />
       <workItem from="1779041806241" duration="4761000" />
-      <workItem from="1779046590814" duration="1820000" />
+      <workItem from="1779046590814" duration="15297000" />
     </task>
+    <task id="LOCAL-00001" summary="Lesson1 - Basic CRUD Phase 1">
+      <option name="closed" value="true" />
+      <created>1779048550893</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779048550893</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added the Controller file">
+      <option name="closed" value="true" />
+      <created>1779048621586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779048621586</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added the CORS to enable recieving all api calls">
+      <option name="closed" value="true" />
+      <created>1779219754950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779219754950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +246,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Lesson1 - Basic CRUD Phase 1" />
+    <MESSAGE value="Added the Controller file" />
+    <MESSAGE value="Added the CORS to enable recieving all api calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the CORS to enable recieving all api calls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -229,17 +267,17 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs</url>
-          <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/ManagementService/DataAccess/Repository/UserRepository.cs" containingFunctionPresentation="Method 'GetUsers'">
+          <url>file://$PROJECT_DIR$/ManagementService/Program.cs</url>
+          <line>96</line>
+          <properties documentPath="$PROJECT_DIR$/ManagementService/Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="392" />
+              <option value="2998" />
             </startOffsets>
             <endOffsets>
-              <option value="393" />
+              <option value="2999" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
