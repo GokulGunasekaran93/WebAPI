@@ -19,4 +19,6 @@ public class User
     public string phone { get; set; }
     public string photo { get; set; }
     public int userRole { get; set; } = 0;
+    [BsonIgnore]
+    public string UserRoleName { get; set; }
 }
