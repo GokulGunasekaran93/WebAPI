@@ -15,4 +15,5 @@ public class DatabaseContext : IDatabaseContext
         
     }
     public IMongoCollection<User> user => _db.GetCollection<User>("users");
+    public IMongoCollection<UserRole> userRole => _db.GetCollection<UserRole>("userRoles");
 }

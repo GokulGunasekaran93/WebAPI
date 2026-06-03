@@ -7,4 +7,6 @@ public interface IDatabaseContext
 {
     // only get should use
     IMongoCollection<User> user { get;}
+    
+    IMongoCollection<UserRole> userRole { get;}
 }
